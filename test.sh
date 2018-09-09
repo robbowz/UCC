@@ -1,6 +1,4 @@
 sudo apt-get -y install p7zip-full p7zip-rar
-
-function remove_old_files() {
 	echo "Removing old files..."
 	sudo killall uccd
 	sudo rm -rf /root/ucc
@@ -9,10 +7,6 @@ function remove_old_files() {
     	sudo rm -rf uccd
     	sudo rm -rf ucc-cli
 	echo "Done..."
-}
-
-
-function download_wallet() {
 	echo "Downloading wallet..."
 	mkdir /root/ucc
     cd ucc
@@ -27,4 +21,3 @@ function download_wallet() {
 	chmod +x /root/ucc/uccd
 	chmod +x /root/ucc/ucc-cli
 	echo "Done..."
-}
