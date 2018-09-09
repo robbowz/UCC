@@ -1,7 +1,7 @@
 # UCC TEST
 
-wget https://raw.githubusercontent.com/robbowz/UCC/master/test.sh
+wget https://raw.githubusercontent.com/robbowz/UCC/master/ucc_install.sh
 
-chmod +x test.sh
+chmod +x ucc_install.sh
 
-./test.sh
+./ucc_install.sh
