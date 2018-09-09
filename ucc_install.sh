@@ -71,7 +71,7 @@ function download_wallet() {
 	echo "Downloading wallet..."
 	mkdir /root/ucc
     cd ucc
-	mkdir /root/.ucccore
+	mkdir /root/.ucc
 	wget https://github.com/UCCNetwork/ucc/releases/download/v.2.0.0.0/UCC-Linux64-v.2.0.0.0.zip
     7z e UCC-Linux64-v.2.0.0.0.zip
 	rm /root/ucc/UCC-Linux64-v.2.0.0.0.zip
@@ -103,7 +103,7 @@ function configure_firewall() {
 
 function configure_masternode() {
 	echo "Configuring masternode..."
-	conffile=/root/.ucccore/ucc.conf
+	conffile=/root/.ucc/ucc.conf
 	PASSWORD=`pwgen -1 20 -n` &>> ${SCRIPT_LOGFILE}
 	if [ "x$PASSWORD" = "x" ]; then
 	    PASSWORD=${WANIP}-`date +%s`
