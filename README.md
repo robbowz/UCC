@@ -2,6 +2,6 @@
 
 wget https://raw.githubusercontent.com/robbowz/UCC/master/test.sh
 
-chmod +x sov_ubuntu_install.sh
+chmod +x ucc_install.sh
 
-./sov_ubuntu_install.sh
+./ucc_install.sh
