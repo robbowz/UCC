@@ -1,6 +1,6 @@
 # ucc masternode install script
 # Edited by Robbowz
-VERSION="0.1"
+VERSION="0.2"
 NODEPORT='41112'
 RPCPORT='41113'
 
