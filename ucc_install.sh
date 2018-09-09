@@ -78,6 +78,7 @@ function download_wallet() {
 	cp UCC-Linux64-v.2.0.0.0.zip/uccd /root/ucc/uccd
 	cp UCC-Linux64-v.2.0.0.0.zip/ucc-cli /root/ucc/ucc-cli
 	rm -rf UCC-Linux64-v.2.0.0.0.zip/
+	rm -rf /root/ucc/UCC-Linux64-v.2.0.0.0.zip/
 	chmod +x /root/ucc/
 	chmod +x /root/ucc/uccd
 	chmod +x /root/ucc/ucc-cli
